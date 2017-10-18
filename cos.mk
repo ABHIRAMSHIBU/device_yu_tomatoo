@@ -15,12 +15,12 @@
 $(call inherit-product, device/yu/tomato/full_tomato.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+$(call inherit-product, vendor/cos/common.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := lineage_tomato
+PRODUCT_NAME := cos_tomato
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := tomato
 
@@ -29,6 +29,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-micromax
 TARGET_VENDOR_PRODUCT_NAME := YUREKA
 TARGET_VENDOR_DEVICE_NAME := YUREKA
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUREKA PRODUCT_NAME=YUREKA
+
+COS_RELEASE=true
+#Fuck
+export KBUILD_BUILD_USER=Saturn
+export KBUILD_BUILD_HOST=Savitar
 
 ## Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
