@@ -1,1 +1,2 @@
-add_lunch_combo bootleg_tomato-userdebug
+add_lunch_combo lineage_tomato-userdebug
+add_lunch_combo lineage_tomato-eng
