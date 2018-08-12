@@ -34,7 +34,6 @@
 
 #include "property_service.h"
 #include "vendor_init.h"
-#include "util.h"
 #include "init_msm8916.h"
 
 using android::base::GetProperty;

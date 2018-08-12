@@ -34,3 +34,8 @@ BOARD_CHARGER_ENABLE_SUSPEND := false
 BACKLIGHT_PATH := "/sys/class/leds/lcd-backlight/brightness"
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
 BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
+
+#P Changes
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_CPU_VARIANT := cortex-a53
